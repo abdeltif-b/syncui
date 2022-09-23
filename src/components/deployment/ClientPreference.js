@@ -317,7 +317,6 @@ const ClientPreference = ({ deploymentId, toast }) => {
 		allowDeleting: true
 	};
 	const template = (props) => {
-		console.log(props)
 		return (<div className='bg-green-100'>
 			{props[props.column.field] && <FontAwesomeIcon icon={faCheck} />}
 		</div>);

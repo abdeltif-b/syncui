@@ -80545,7 +80545,7 @@ const ArrimagePlan = ({ deploymentId, toast }) => {
 	return (
 		<>
 			<GridComponent
-				gridLines='Both'
+				// gridLines='Both'
 				locale='fr'
 				dataSource={data}
 				pageSettings={{ pageSize: 13 }}

@@ -15,12 +15,12 @@ function Home() {
       <div className="flex align-items-center justify-content-center flex-wrap card-container">
         <div className="col-12 md:col-6 lg:col-6">
           <Card title="Fluidification des flux camions" header={<FontAwesomeIcon icon={faTruckArrowRight} size={'5x'} className='text-300' />} onClick={() => Router.push('/deployment')} className='flex flex-column align-items-center justify-content-center hover:bg-blue-50 cursor-pointer h-30rem'>
-            <p className="flex justify-content-center m-0" style={{ lineHeight: '1.5' }}>maybe some description of the challenge here... </p>
+            {/* <p className="flex justify-content-center m-0" style={{ lineHeight: '1.5' }}>maybe some description of the challenge here... </p> */}
           </Card>
         </div>
         <div className="col-12 md:col-6 lg:col-6">
-          <Card title="Réduction du temps d'attente des navires au port" header={<FontAwesomeIcon icon={faShip} size={'5x'} className='text-300' />} onClick={() => Router.push('/vessel')} className='flex flex-column align-items-center justify-content-center hover:bg-blue-50 cursor-pointer h-30rem'>
-            <p className="flex justify-content-center m-0" style={{ lineHeight: '1.5' }}>maybe some description of the challenge here... </p>
+          <Card title="réduction du délai d'attente des navires en rade" header={<FontAwesomeIcon icon={faShip} size={'5x'} className='text-300' />} onClick={() => Router.push('/vessel')} className='flex flex-column align-items-center justify-content-center hover:bg-blue-50 cursor-pointer h-30rem'>
+            {/* <p className="flex justify-content-center m-0" style={{ lineHeight: '1.5' }}>maybe some description of the challenge here... </p> */}
           </Card>
         </div>
 

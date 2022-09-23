@@ -26,13 +26,13 @@ export function RootLayout({ children }) {
 			command: (event) => router.push('/')
 		},
 		{
-			label: 'Plans de déchargement',
+			label: 'Fluidification des flux camions',
 			icon: <FontAwesomeIcon icon={faTruckArrowRight} className="mr-2" />,
 			className: router.route.startsWith('/deployment') ? 'p-menuitem-active' : '',
 			command: (event) => router.push('/deployment')
 		},
 		{
-			label: 'Plan des navires',
+			label: 'réduction du délai d\'attente des navires en rade',
 			icon: <FontAwesomeIcon icon={faShip} className="mr-2" />,
 			className: router.route.startsWith('/vessel') ? 'p-menuitem-active' : '',
 			command: (event) => router.push('/vessel')

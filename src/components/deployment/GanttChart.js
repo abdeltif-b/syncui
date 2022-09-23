@@ -1,5 +1,19 @@
-import { GanttComponent, Inject, Selection, ColumnsDirective, ColumnDirective, Edit, Filter, Toolbar } from '@syncfusion/ej2-react-gantt';
+import { GanttComponent, Inject, Selection, ColumnsDirective, ColumnDirective, Edit, Filter, Toolbar, DayMarkers } from '@syncfusion/ej2-react-gantt';
 import { useState } from 'react';
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+
+// setCulture('de-DE');
+L10n.load({
+	'de-DE': {
+		'gantt': {
+			"id": "Ich würde",
+			"name": "Name",
+			"startDate": "Anfangsdatum",
+			"duration": "Dauer",
+			"progress": "Fortschritt",
+		}
+	}
+});
 
 export const GanttChart = () => {
 	const [data, setData] = useState([
@@ -12,6 +26,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 2,
 			"duration": 4,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": ""
 		},
 		{
@@ -23,6 +38,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 3,
 			"duration": 6,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "1"
 		},
 		{
@@ -34,6 +50,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 2,
 			"duration": 4,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "2"
 		},
 		{
@@ -45,6 +62,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "3"
 		},
 		{
@@ -56,6 +74,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "4"
 		},
 		{
@@ -67,6 +86,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "5"
 		},
 		{
@@ -78,6 +98,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "6"
 		},
 		{
@@ -89,6 +110,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "7"
 		},
 		{
@@ -100,6 +122,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 2,
 			"duration": 4,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "8"
 		},
 		{
@@ -111,6 +134,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 3,
 			"duration": 6,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "9"
 		},
 		{
@@ -122,6 +146,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "10"
 		},
 		{
@@ -133,6 +158,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "11"
 		},
 		{
@@ -144,6 +170,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "12"
 		},
 		{
@@ -155,6 +182,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 2,
 			"duration": 4,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "13"
 		},
 		{
@@ -166,6 +194,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "14"
 		},
 		{
@@ -177,6 +206,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 3,
 			"duration": 6,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 8h à 9h',
 			"Dependency": "15"
 		},
 		{
@@ -188,6 +218,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 2,
 			"duration": 4,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "16"
 		},
 		{
@@ -199,6 +230,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 3,
 			"duration": 6,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "17"
 		},
 		{
@@ -210,6 +242,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "18"
 		},
 		{
@@ -221,6 +254,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "19"
 		},
 		{
@@ -232,6 +266,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "20"
 		},
 		{
@@ -243,6 +278,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "21"
 		},
 		{
@@ -254,6 +290,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "22"
 		},
 		{
@@ -265,6 +302,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "23"
 		},
 		{
@@ -276,6 +314,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "24"
 		},
 		{
@@ -287,6 +326,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 6,
 			"duration": 12,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "25"
 		},
 		{
@@ -298,6 +338,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 3,
 			"duration": 6,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "26"
 		},
 		{
@@ -309,6 +350,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "27"
 		},
 		{
@@ -320,6 +362,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "28"
 		},
 		{
@@ -331,6 +374,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "29"
 		},
 		{
@@ -342,6 +386,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "30"
 		},
 		{
@@ -353,6 +398,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "31"
 		},
 		{
@@ -364,6 +410,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "32"
 		},
 		{
@@ -375,6 +422,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "33"
 		},
 		{
@@ -386,6 +434,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "34"
 		},
 		{
@@ -397,6 +446,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "35"
 		},
 		{
@@ -408,6 +458,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "36"
 		},
 		{
@@ -419,6 +470,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 3,
 			"duration": 6,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 9h à 10h',
 			"Dependency": "37"
 		},
 		{
@@ -430,6 +482,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 10h à 11h',
 			"Dependency": "38"
 		},
 		{
@@ -441,6 +494,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 10h à 11h',
 			"Dependency": "39"
 		},
 		{
@@ -452,6 +506,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 10h à 11h',
 			"Dependency": "40"
 		},
 		{
@@ -463,6 +518,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 10h à 11h',
 			"Dependency": "41"
 		},
 		{
@@ -474,6 +530,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
+			"notes": 'Préférence du client: 10h à 11h',
 			"Dependency": "42"
 		}
 	])
@@ -485,11 +542,13 @@ export const GanttChart = () => {
 		duration: 'duration',
 		// progress: 'Progress',
 		dependency: 'Dependency',
+		notes: 'notes',
 		// child: 'subtasks',
 	};
+
 	const labelSettings = {
 		leftLabel: 'task',
-		// rightLabel: '',
+		rightLabel: 'notes',
 		// taskLabel: 'duration',
 	};
 	const projectStartDate = new Date('09/09/2022 7:55:00 AM');
@@ -509,6 +568,37 @@ export const GanttChart = () => {
 	};
 	const toolbar = ['ZoomIn', 'ZoomOut', 'ZoomToFit'];
 	const filterSettings = { type: "Excel" };
+	const taskbarTooltip = (props) => {
+		console.log(props)
+		return (<table>
+
+			{/* <tr>
+				<td style={{ padding: '3px' }}>Date début:</td>
+				<td style={{ padding: '3px' }}>{this.ganttInstance.getFormatedDate(props.StartDate)}</td>
+			</tr>
+			<tr>
+				<td style={{ padding: '3px' }}>Date fin:</td>
+				<td style={{ padding: '3px' }}>{this.ganttInstance.getFormatedDate(props.EndDate)}</td>
+			</tr> */}
+			{/* <tr>
+				<td style={{ padding: '3px' }}>Durée:</td>
+				<td style={{ padding: '3px' }}>{this.ganttInstance.getFormatedDate(props.Duration)}</td>
+			</tr>
+			<tr className='bg-blue-500'>
+				<td style={{ padding: '3px' }}>Rendez-vous:</td>
+				<td style={{ padding: '3px' }}>{this.ganttInstance.getFormatedDate(props.Duration)}</td>
+			</tr> 
+			<tr className='bg-blue-500'>
+				<td style={{ padding: '3px' }}>Préférence du client:</td>
+				<td style={{ padding: '3px' }}>{this.ganttInstance.getFormatedDate(props.Duration)}</td>
+			</tr> 
+			*/}
+		</table>);
+	}
+	const tooltipSettings = {
+		showTooltip: true,
+		// taskbar: taskbarTooltip(),
+	};
 
 
 	return (<div className='control-pane'>
@@ -518,7 +608,7 @@ export const GanttChart = () => {
 				projectEndDate={projectEndDate} timelineSettings={timelineSettings}
 				splitterSettings={splitterSettings} editSettings={editSettings}
 				allowFiltering={true} dateFormat='MM/dd/yyyy hh:mm:ss' toolbar={toolbar}
-				durationUnit='Minute' locale='fr' filterSettings={filterSettings}
+				durationUnit='Minute' locale='de-DE' filterSettings={filterSettings} tooltipSettings={tooltipSettings}
 			>
 				<ColumnsDirective>
 					<ColumnDirective field='id' width='35' allowFiltering={false} allowEditing={false}></ColumnDirective>
@@ -531,7 +621,7 @@ export const GanttChart = () => {
 					{/* <ColumnDirective field='Début' ></ColumnDirective> */}
 					{/* <ColumnDirective field='Dependency' headerText='Dépendance'></ColumnDirective> */}
 				</ColumnsDirective>
-				<Inject services={[Selection, Edit, Filter, Toolbar]} />
+				<Inject services={[Selection, Edit, Filter, Toolbar, DayMarkers]} />
 			</GanttComponent>
 		</div>
 

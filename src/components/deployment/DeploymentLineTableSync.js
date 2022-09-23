@@ -327,12 +327,13 @@ const DeploymentLineTableSync = ({ deploymentId, toast }) => {
 				toolbar={toolbarOptions}
 				editSettings={editSettings}
 				isAutoFitColumns
+
 			>
 				<ColumnsDirective>
-					<ColumnDirective field='Numéro du conteneur' width='100' textAlign='Center' isPrimaryKey></ColumnDirective>
+					<ColumnDirective field='Numéro du conteneur' width='120' textAlign='Center' isPrimaryKey></ColumnDirective>
 					<ColumnDirective field='Type du conteneur' width='120' textAlign='Center' allowEditing={true}></ColumnDirective>
 					<ColumnDirective field='Section transversale (BAY)' width='120' textAlign='Center' allowEditing={true}></ColumnDirective>
-					<ColumnDirective field='Rangée (ROW)' width='280' textAlign='Center' allowEditing={true}></ColumnDirective>
+					<ColumnDirective field='Rangée (ROW)' width='120' textAlign='Center' allowEditing={true}></ColumnDirective>
 					<ColumnDirective field='Niveau (TIER)' width='120' textAlign='Right' format='N2' allowEditing={true}></ColumnDirective>
 				</ColumnsDirective>
 				<Inject services={[Sort, Filter, Page, Toolbar, Edit]} />

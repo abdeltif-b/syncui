@@ -35,7 +35,7 @@ export const deploymentState = {
 	},
 	done: {
 		value: 'done',
-		label: 'Achevé',
+		label: 'Déchargé',
 		color: 'green'
 	},
 	stopped: {

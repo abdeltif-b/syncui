@@ -82,9 +82,9 @@ const DeploymentListFilter = ({ data, setFilteredData }) => {
 			</div> */}
 			<Divider layout='vertical' />
 			<CheckboxTag
-				title='Statut du plan de déchargement'
+				title='Statut des plannings de déchargement'
 				ids={['fixedState', 'inProgressState', 'doneState']}
-				labels={['Planifié', 'En cours', 'Achevé']}
+				labels={['Planifié', 'En cours', 'Déchargé']}
 				states={[fixedState, inProgressState, doneState]}
 				setStates={[setFixedState, setInProgressState, setDoneState]}
 				counts={[fixedStateCount, inProgressStateCount, doneStateCount]}
