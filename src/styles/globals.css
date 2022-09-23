@@ -1,0 +1,41 @@
+body {
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--surface-ground);
+	min-height: 100%;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.p-menubar {
+	margin: -10px -10px 5px -10px;
+}
+
+/* define font size */
+.p-component {
+	font-size: 14px;
+}
+
+/* fix input text field big size on cell edit in datatables */
+.editable-cells-table {
+	min-height: 400px !important;
+}
+
+.editable-cells-table td.p-cell-editing {
+	padding: 0 !important;
+}
+
+.editable-cells-table td.p-cell-editing input.p-inputtext {
+	padding: 0.25rem 0rem 0.25rem 0.25rem !important;
+	width: 100%;
+}
+
+/* use center text inside table headers */
+/* .p-datatable .p-datatable-thead>tr>th {
+	text-align: center;
+} */
+
+/* .grid {
+	display: block;
+} */
