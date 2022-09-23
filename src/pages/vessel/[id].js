@@ -33,7 +33,7 @@ export default function DeploymentDetailPage({ toast }) {
   // }
   const breadCrumbItems = [
     {
-      label: 'Liste des navires',
+      label: 'Liste des plannings des navires',
       icon: <FontAwesomeIcon icon={faCubes} fixedWidth />,
       command: (event) => router.push('/vessel')
     },
