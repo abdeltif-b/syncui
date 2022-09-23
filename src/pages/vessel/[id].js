@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 
-import { DeploymentListItem } from '../../components/deployment/DeploymentListItem';
 import { TabView, TabPanel } from 'primereact/tabview';
 import DeploymentLineBreadCrumb from '../../components/deployment/DeploymentBreadCrumb';
 import { useState } from 'react';
@@ -9,6 +8,9 @@ import { faCoins, faCubes, faHashtag, faPallet, faWarehouse } from '@fortawesome
 import DeploymentLineTableSync from '../../components/deployment/DeploymentLineTableSync';
 import { _DEPLOYMENT_LINE } from '.';
 import { VesselMap } from '../../components/vessel/VesselMap';
+import { VesselListItem } from '../../components/deployment/VesselListItem';
+import VesselUnload from '../../components/vessel/VesselUnload';
+import ArrimagePlanVessel from '../../components/vessel/ArrimagePlanVessel';
 
 
 export default function DeploymentDetailPage({ toast }) {
@@ -45,15 +47,23 @@ export default function DeploymentDetailPage({ toast }) {
       {/* <Toast ref={toast} /> */}
 
       <DeploymentLineBreadCrumb items={breadCrumbItems} />
-      <DeploymentListItem item={dataDeployment?.result[0]} toast={toast} />
+      <VesselListItem item={dataDeployment?.result[0]} toast={toast} />
 
       <TabView className='mt-2'>
-
-        <TabPanel key='tab1' header={tabHeadertemplate('Containers to unload', null)}>
+        <TabPanel key='tab1' header={tabHeadertemplate('Position des navires', null)}>
           <VesselMap />
-          <DeploymentLineTableSync deploymentId={Number(id)} toast={toast} />
         </TabPanel>
-        <TabPanel key='tab2' header={tabHeadertemplate('tab2', null)}>
+        <TabPanel key='tab2' header={tabHeadertemplate('Navires à décharger', null)}>
+          <VesselUnload />
+        </TabPanel>
+        <TabPanel key='tab3' header={tabHeadertemplate('Plan d\'arrimage', null)}>
+          <ArrimagePlanVessel />
+        </TabPanel>
+        <TabPanel key='tab4' header={tabHeadertemplate('Planning des navires', null)}>
+          {/* <GanttChart /> */}
+        </TabPanel>
+        <TabPanel key='tab5' header={tabHeadertemplate('Résultats', null)}>
+          <VesselMap />
         </TabPanel>
 
       </TabView>

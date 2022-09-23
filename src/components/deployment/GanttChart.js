@@ -1,19 +1,6 @@
 import { GanttComponent, Inject, Selection, ColumnsDirective, ColumnDirective, Edit, Filter, Toolbar, DayMarkers } from '@syncfusion/ej2-react-gantt';
 import { useState } from 'react';
-import { L10n, setCulture } from '@syncfusion/ej2-base';
 
-// setCulture('de-DE');
-L10n.load({
-	'de-DE': {
-		'gantt': {
-			"id": "Ich würde",
-			"name": "Name",
-			"startDate": "Anfangsdatum",
-			"duration": "Dauer",
-			"progress": "Fortschritt",
-		}
-	}
-});
 
 export const GanttChart = () => {
 	const [data, setData] = useState([
@@ -603,12 +590,12 @@ export const GanttChart = () => {
 
 	return (<div className='control-pane'>
 		<div className='control-section'>
-			<GanttComponent id='Default' dataSource={data} treeColumnIndex={1} taskFields={taskFields}
+			<GanttComponent locale='fr' id='Default' dataSource={data} treeColumnIndex={1} taskFields={taskFields}
 				labelSettings={labelSettings} height='625px' projectStartDate={projectStartDate}
 				projectEndDate={projectEndDate} timelineSettings={timelineSettings}
 				splitterSettings={splitterSettings} editSettings={editSettings}
 				allowFiltering={true} dateFormat='MM/dd/yyyy hh:mm:ss' toolbar={toolbar}
-				durationUnit='Minute' locale='de-DE' filterSettings={filterSettings} tooltipSettings={tooltipSettings}
+				durationUnit='Minute' filterSettings={filterSettings} tooltipSettings={tooltipSettings}
 			>
 				<ColumnsDirective>
 					<ColumnDirective field='id' width='35' allowFiltering={false} allowEditing={false}></ColumnDirective>

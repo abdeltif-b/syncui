@@ -48,7 +48,7 @@ export default function DeploymentDetailPage({ toast }) {
   // }
   const breadCrumbItems = [
     {
-      label: 'Liste des navires',
+      label: 'Planning de déchargement des conteneurs',
       icon: <FontAwesomeIcon icon={faCubes} fixedWidth />,
       command: (event) => router.push('/deployment')
     },
@@ -75,7 +75,7 @@ export default function DeploymentDetailPage({ toast }) {
         <TabPanel key='tab3' header={tabHeadertemplate('Préférence du client', null)}>
           <ClientPreference deploymentId={Number(id)} toast={toast} />
         </TabPanel>
-        <TabPanel key='tab4' header={tabHeadertemplate('Nombre de conteneur à déplacer', null)}>
+        <TabPanel key='tab4' header={tabHeadertemplate('Planning de déchargement des conteneurs', null)}>
           <GanttChart />
         </TabPanel>
 
