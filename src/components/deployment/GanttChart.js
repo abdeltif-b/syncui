@@ -14,7 +14,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 2,
 			"duration": 4,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:05:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": ""
 		},
 		{
@@ -26,7 +26,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 3,
 			"duration": 6,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:10:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "1"
 		},
 		{
@@ -38,7 +38,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 2,
 			"duration": 4,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:15:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "2"
 		},
 		{
@@ -50,7 +50,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:22:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "3"
 		},
 		{
@@ -62,7 +62,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:25:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "4"
 		},
 		{
@@ -74,7 +74,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:30:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "5"
 		},
 		{
@@ -86,7 +86,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "6"
 		},
 		{
@@ -98,7 +98,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "7"
 		},
 		{
@@ -110,7 +110,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 2,
 			"duration": 4,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "8"
 		},
 		{
@@ -122,7 +122,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 3,
 			"duration": 6,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "9"
 		},
 		{
@@ -134,7 +134,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "10"
 		},
 		{
@@ -146,7 +146,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "11"
 		},
 		{
@@ -158,7 +158,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "12"
 		},
 		{
@@ -170,7 +170,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 2,
 			"duration": 4,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "13"
 		},
 		{
@@ -182,7 +182,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "14"
 		},
 		{
@@ -194,7 +194,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 3,
 			"duration": 6,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 8h à 9h)',
+			"notes": 'Préférence du client : 8h à 9h',
 			"Dependency": "15"
 		},
 		{
@@ -206,7 +206,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 2,
 			"duration": 4,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "16"
 		},
 		{
@@ -218,7 +218,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 3,
 			"duration": 6,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "17"
 		},
 		{
@@ -230,7 +230,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "18"
 		},
 		{
@@ -242,7 +242,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "19"
 		},
 		{
@@ -254,7 +254,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "20"
 		},
 		{
@@ -266,7 +266,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "21"
 		},
 		{
@@ -278,7 +278,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "22"
 		},
 		{
@@ -290,7 +290,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "23"
 		},
 		{
@@ -302,7 +302,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "24"
 		},
 		{
@@ -314,7 +314,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 6,
 			"duration": 12,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "25"
 		},
 		{
@@ -326,7 +326,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 3,
 			"duration": 6,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "26"
 		},
 		{
@@ -338,7 +338,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "27"
 		},
 		{
@@ -350,7 +350,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "28"
 		},
 		{
@@ -362,7 +362,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "29"
 		},
 		{
@@ -374,7 +374,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "30"
 		},
 		{
@@ -386,7 +386,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "31"
 		},
 		{
@@ -398,7 +398,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "32"
 		},
 		{
@@ -410,7 +410,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "33"
 		},
 		{
@@ -422,7 +422,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "34"
 		},
 		{
@@ -434,7 +434,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "35"
 		},
 		{
@@ -446,7 +446,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "36"
 		},
 		{
@@ -458,7 +458,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 3,
 			"duration": 6,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 9h à 10h)',
+			"notes": 'Préférence du client : 9h à 10h',
 			"Dependency": "37"
 		},
 		{
@@ -470,7 +470,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 4,
 			"duration": 8,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 10h à 11h)',
+			"notes": 'Préférence du client : 10h à 11h',
 			"Dependency": "38"
 		},
 		{
@@ -482,7 +482,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 10h à 11h)',
+			"notes": 'Préférence du client : 10h à 11h',
 			"Dependency": "39"
 		},
 		{
@@ -494,7 +494,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 10h à 11h)',
+			"notes": 'Préférence du client : 10h à 11h',
 			"Dependency": "40"
 		},
 		{
@@ -506,7 +506,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 5,
 			"duration": 10,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 10h à 11h)',
+			"notes": 'Préférence du client : 10h à 11h',
 			"Dependency": "41"
 		},
 		{
@@ -518,7 +518,7 @@ export const GanttChart = () => {
 			"Nombre de mouvements": 1,
 			"duration": 2,
 			"Début": new Date('09/09/2022 8:25:00 AM'),
-			"notes": 'Rendez-vous ' + '8:35:00 AM ' + '(Préférence du client : 10h à 11h)',
+			"notes": 'Préférence du client : 10h à 11h',
 			"Dependency": "42"
 		}
 	])
@@ -526,7 +526,7 @@ export const GanttChart = () => {
 	// 	const _data = data.map(item => (
 	// 		{
 	// 			...item,
-	// 			notes: 'Rendez-vous ' + addMinutes(item['Début'], 10) + item.notes,
+	// 			// notes: 'Rendez-vous ' + addMinutes(item['Début'], 10) + item.notes,
 	// 		}
 	// 	))
 	// 	setData(_data)

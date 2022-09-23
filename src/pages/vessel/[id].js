@@ -11,6 +11,8 @@ import { VesselMap } from '../../components/vessel/VesselMap';
 import { VesselListItem } from '../../components/deployment/VesselListItem';
 import VesselUnload from '../../components/vessel/VesselUnload';
 import ArrimagePlanVessel from '../../components/vessel/ArrimagePlanVessel';
+import { VesselMapResult } from '../../components/vessel/VesselMapResult';
+import { VesselGanttChart } from '../../components/vessel/VesselGanttChart';
 
 
 export default function DeploymentDetailPage({ toast }) {
@@ -60,10 +62,10 @@ export default function DeploymentDetailPage({ toast }) {
           <ArrimagePlanVessel />
         </TabPanel>
         <TabPanel key='tab4' header={tabHeadertemplate('Planning des navires', null)}>
-          {/* <GanttChart /> */}
+          <VesselGanttChart />
         </TabPanel>
         <TabPanel key='tab5' header={tabHeadertemplate('Résultats', null)}>
-          <VesselMap />
+          <VesselMapResult />
         </TabPanel>
 
       </TabView>
