@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { GridComponent, ColumnsDirective, ColumnDirective, Sort, Filter, Page, Inject, Toolbar, Edit } from '@syncfusion/ej2-react-grids';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-
 
 
 const ArrimagePlan = ({ deploymentId, toast }) => {
@@ -80536,16 +80535,9 @@ const ArrimagePlan = ({ deploymentId, toast }) => {
 		allowAdding: true,
 		allowDeleting: true
 	};
-	const template = (props) => {
-		console.log(props)
-		return (<div className='bg-green-100'>
-			{props[props.column.field] && <FontAwesomeIcon icon={faCheck} />}
-		</div>);
-	}
 	return (
 		<>
 			<GridComponent
-				// gridLines='Both'
 				locale='fr'
 				dataSource={data}
 				pageSettings={{ pageSize: 13 }}
