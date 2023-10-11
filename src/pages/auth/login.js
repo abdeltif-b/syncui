@@ -40,11 +40,13 @@ export default function Login() {
 
   return (
     <div className="flex align-items-center justify-content-center my-8">
-      <div className="surface-card p-4 shadow-2 border-round w-full md:w-7 lg:w-4">
-        <div className="text-center mb-5">
-          <img src="/assets/img/logo_dark.png" alt="planiverse" height={35} className="mb-3" />
+      <div className="surface-card p-4 shadow-2 border-round w-full md:w-7 lg:w-4 mt-8">
+        <div className="flex align-items-center justify-content-center text-center mb-5">
+          <div className={"mb-3 flex z-40 text-xl font-bold text-gray-900"}>
+            <span>SyncUI</span>
+            <span className="text-blue-600">/&gt;</span>
+          </div>
         </div>
-
         <form onSubmit={handleSubmit(onSubmit)} className="p-fluid">
           <div className="field py-2">
             <span className="p-float-label p-input-icon-right">
